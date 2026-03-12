@@ -381,7 +381,7 @@ Keep the tone warm and direct. No filler.`;
     <div style={{ background:T.bg,minHeight:"100vh",maxWidth:430,margin:"0 auto",fontFamily:"'DM Sans',sans-serif" }}>
 
       {/* HEADER */}
-      <div style={{ background:T.surface,borderBottom:`1px solid ${T.border}`,paddingTop:"max(env(safe-area-inset-top), 48px)",paddingLeft:"24px",paddingRight:"24px",paddingBottom:"14px",position:"sticky",top:0,zIndex:100 }}>
+      <div style={{ background:T.surface,borderBottom:`1px solid ${T.border}`,ppadding:"18px 24px 14px",position:"sticky",top:0,zIndex:100 }}>
         <div style={{ display:"flex",justifyContent:"space-between",alignItems:"flex-start" }}>
           <div>
             <div style={{ fontFamily:"'Playfair Display',serif",fontSize:28,fontWeight:700,color:T.text,lineHeight:1,letterSpacing:"-0.02em" }}>Pantry</div>
