@@ -342,7 +342,7 @@ Keep the tone warm and direct. No filler.`;
         body:JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:900, messages:[{role:"user",content:prompt}] }),
       });
       const data = await res.json();
-      setAiText(data.content?.[0]?.text||"No response.");
+      setAiText(data.content?.[0]?.text || JSON.stringify(data));
     } catch { setAiError("Could not reach the AI. Check your connection and try again."); }
     setAiLoading(false);
   };
