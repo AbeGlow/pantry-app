@@ -381,7 +381,7 @@ Keep the tone warm and direct. No filler.`;
     <div style={{ background:T.bg,minHeight:"100vh",maxWidth:430,margin:"0 auto",fontFamily:"'DM Sans',sans-serif" }}>
 
       {/* HEADER */}
-      <div style={{ background:T.surface,borderBottom:`1px solid ${T.border}`,padding:"18px 24px 14px",position:"sticky",top:0,zIndex:100 }}>
+      <div style={{ background:T.surface,borderBottom:`1px solid ${T.border}`,paddingTop:"max(env(safe-area-inset-top), 48px)",paddingLeft:"24px",paddingRight:"24px",paddingBottom:"14px",position:"sticky",top:0,zIndex:100 }}>
         <div style={{ display:"flex",justifyContent:"space-between",alignItems:"flex-start" }}>
           <div>
             <div style={{ fontFamily:"'Playfair Display',serif",fontSize:28,fontWeight:700,color:T.text,lineHeight:1,letterSpacing:"-0.02em" }}>Pantry</div>
@@ -564,7 +564,7 @@ Keep the tone warm and direct. No filler.`;
       </div>
 
       {/* BOTTOM NAV */}
-      <div style={{ position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:430,background:T.surface,borderTop:`1px solid ${T.border}`,display:"flex",padding:"12px 0 28px",zIndex:100,boxShadow:"0 -4px 20px rgba(0,0,0,0.06)" }}>
+      <div style={{ position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:430,background:T.surface,borderTop:`1px solid ${T.border}`,display:padding:"12px 0",paddingBottom:"max(env(safe-area-inset-bottom), 28px)",zIndex:100"flex",,boxShadow:"0 -4px 20px rgba(0,0,0,0.06)" }}>
         {[["plan","Plan"],["shop","Shop"],["pantry","Pantry"]].map(([id,label])=>(
           <button key={id} onClick={()=>setTab(id)} style={{ flex:1,background:"none",border:"none",cursor:"pointer",display:"flex",flexDirection:"column",alignItems:"center",gap:5 }}>
             <div style={{ width:24,height:2,borderRadius:1,background:tab===id?T.text:"transparent",transition:"background 0.2s" }}/>
