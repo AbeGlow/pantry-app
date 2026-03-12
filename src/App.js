@@ -564,7 +564,7 @@ Keep the tone warm and direct. No filler.`;
       </div>
 
       {/* BOTTOM NAV */}
-      <div style={{ position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:430,background:T.surface,borderTop:`1px solid ${T.border}`,display:padding:"12px 0 28px",zIndex:100"flex",,boxShadow:"0 -4px 20px rgba(0,0,0,0.06)" }}>
+      <div style={{ position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:430,background:T.surface,borderTop:`1px solid ${T.border}`,display:"flex",padding:"12px 0 28px",zIndex:100,boxShadow:"0 -4px 20px rgba(0,0,0,0.06)" }}>
         {[["plan","Plan"],["shop","Shop"],["pantry","Pantry"]].map(([id,label])=>(
           <button key={id} onClick={()=>setTab(id)} style={{ flex:1,background:"none",border:"none",cursor:"pointer",display:"flex",flexDirection:"column",alignItems:"center",gap:5 }}>
             <div style={{ width:24,height:2,borderRadius:1,background:tab===id?T.text:"transparent",transition:"background 0.2s" }}/>
